@@ -12,6 +12,7 @@
         <module>app</module>
         <module>domain</module>
         <module>dataprovider</module>
+        <module>entrypoint</module>
     </modules>
 
     <properties>

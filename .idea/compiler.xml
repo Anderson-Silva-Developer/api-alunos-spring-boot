@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="app" />
         <module name="dataprovider" />
+        <module name="entrypoint" />
         <module name="domain" />
       </profile>
     </annotationProcessing>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>app</artifactId>
+    <artifactId>entrypoint</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -19,16 +19,6 @@
         <dependency>
             <groupId>com.anderson</groupId>
             <artifactId>domain</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.anderson</groupId>
-            <artifactId>dataprovider</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.anderson</groupId>
-            <artifactId>entrypoint</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>

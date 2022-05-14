@@ -28,7 +28,7 @@ public class AlunoEntity {
 
     }
 
-    public static Object from(Aluno aluno) {
+    public static AlunoEntity from(Aluno aluno) {
         return new AlunoEntity(aluno.getRegistrationNumber(),aluno.getName());
     }
 }
