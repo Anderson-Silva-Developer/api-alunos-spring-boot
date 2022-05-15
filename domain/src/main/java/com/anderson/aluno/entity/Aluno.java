@@ -3,12 +3,13 @@ package com.anderson.aluno.entity;
 import java.util.UUID;
 
 public class Aluno {
-    private  final UUID registrationNumber;
-    private final  String name;
+    private  UUID registrationNumber;
+    private  String name;
 
-    public Aluno(String name) {
-        this.registrationNumber = UUID.randomUUID();
-        this.name = name;
+    public static Aluno from(String name) {
+        Aluno aluno=new Aluno();
+        aluno.name=name;
+        return aluno;
     }
 
     public UUID getRegistrationNumber() {
@@ -17,5 +18,13 @@ public class Aluno {
 
     public String getName() {
         return name;
+    }
+
+    public void setRegistrationNumber(UUID registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

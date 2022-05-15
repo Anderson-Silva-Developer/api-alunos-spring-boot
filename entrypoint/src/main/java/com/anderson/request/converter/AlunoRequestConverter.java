@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AlunoRequestConverter {
     public Aluno toAluno(AlunoRequest request){
-        return new Aluno(request.getName());
+        return Aluno.from(request.getName());
 
     }
 }

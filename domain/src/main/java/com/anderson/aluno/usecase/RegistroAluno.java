@@ -1,20 +1,22 @@
 package com.anderson.aluno.usecase;
 
 import com.anderson.aluno.contract.AlunoRepository;
+import com.anderson.aluno.contract.RegistroAlunoBorda;
 import com.anderson.aluno.entity.Aluno;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
-public class RegistroAluno {
+import java.util.UUID;
 
-    @Autowired
+
+public class RegistroAluno implements RegistroAlunoBorda {
     AlunoRepository alunoRepository;
 
-    public void save(Aluno aluno){
+    public RegistroAluno(AlunoRepository alunoRepository) {
+        this.alunoRepository = alunoRepository;
+    }
 
+    public void save(Aluno aluno) {
+        aluno.setRegistrationNumber(UUID.randomUUID());
         this.alunoRepository.save(aluno);
-
     }
 
 }
